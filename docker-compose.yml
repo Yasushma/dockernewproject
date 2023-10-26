@@ -1,27 +1,27 @@
 version: '3.8'
 services:
   traintickets:
-    image: pavankumarsangisetti/traintickets:latest
+    image: yasushma13/traintickets:latest
     ports:
        - "81:80"
     deploy:
        replicas: 3
 
   mobilerecharge:
-     image: pavankumarsangisetti/mobilerecharge:latest
+     image: yasushma13/mobilerecharge:latest
      ports:
          - "82:80"
      deploy:
          replicas: 3
   movietickets:
-     image: pavankumarsangisetti/movietickets:latest
+     image: yasushma13/movietickets:latest
      ports:
          - "83:80"
      deploy:
          replicas: 3
 
   electricitybill:
-     image: pavankumarsangisetti/electricitybills:latest
+     image: yasushma13/electricitybills:latest
      ports:
          - "84:80"
      deploy:
